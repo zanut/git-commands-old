@@ -1,30 +1,34 @@
 ## Commands for Remotes
 
-> TODO Write your answers and then remove **all** the TODO comments
    ```
 
 1. List all your remote repositories and show their URLs:
-   ```
-   Todo write the git command for this
-   ```
 
+   origin  https://github.com/zanut/git-commands.git (fetch)
+   origin  https://github.com/zanut/git-commands.git (push)
+
+   ```
+   ```
 2. View details about a remote repo named `origin`, including all the remote branches and local tracking branches for `origin`:
+git remote show origin
+git branch -rvv 
    ```
-   Todo write the git command for this
    ```
-
 3. (Pushing a new branch) You commit some files to the `dev-foo` branch and try to "push" them to Github, but it fails as shown here:
 
+git push origin dev-foo
+
+error: src refspec dev-foo does not match any
+error: failed to push some refs to 'https://github.com/zanut/git-commands.git'
    ```
-   cmd>  git checkout dev-foo
-   cmd>  git push
+   cmd>  git checkout dev-foo  
+   cmd>  git push  
    fatal:  The current branch dev-foo has no upstream branch. 
    ```
    Explain this error.
-   > TODO Since you are writing an explanation (not shell commands), write your answer in lines beginning with `>` like this one. The text will be formatted and may include Markdown.
-
-
-4. The command to push `dev-foo` to `origin` as a **new remote branch** on `origin` is:
+   > The branch name dev-foo doesn't exist yet, so when we use git checkout, we can't go to an unexisting branch.
+   
+4. The command to push `dev-foo` to `origin` as a **new remote branch** on `origin` is: git push origin dev-foo:dev-foo
 
 
 5. (Create a local tracking branch for a remote branch) The remote repository (`origin`) has a branch named `e2e-test` that you don't have in your local repository.   
