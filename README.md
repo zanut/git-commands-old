@@ -164,13 +164,26 @@ test/
 
 2. Show the history (as above) including *all* branches in the repository and include a graph connecting the commits:
    ```
+   02ec5ce (HEAD -> master, origin/master, origin/HEAD) Done Undo Changes and Recover Files topic
+   9c5b4ca Done Adding and Changing Things part
+   a849183 Initial commit
+
 
    ```
 
 
 3. List all the files in the current branch of the repository:
    ```
-   todo your answer
+   .gitignore
+   .idea/.gitignore
+   .idea/git-commands.iml
+   .idea/inspectionProfiles/Project_Default.xml
+   .idea/inspectionProfiles/profiles_settings.xml
+   .idea/misc.xml
+   .idea/modules.xml
+   .idea/vcs.xml
+   README.md
+   remote-commands.md
    ```
    Example output:
    ```
