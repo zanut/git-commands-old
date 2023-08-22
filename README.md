@@ -1,24 +1,3 @@
-
-**TODO**: Delete these instructions before you submit your work.
-## Instructions
-
-1. Read Chapters 2 & 3 of [Pro Git][ProGit]. The chapters are short.
-2. Answer these questions using [Markdown format][markdown-cheatsheet] (also [Github Markdown][github-markdown]). 
-3. Place your answers between lines beginning with 3 backquotes, which tells Markdown it should be unformatted text, and write only the commands you would type (**no** shell prompt).  E.g.:
-   ```
-   git status         CORRECT
-   $ git status       WRONG  - you do not type "$"
-   ```
-4. Indent the 3 backquotes so they line up with the question text (3 leading spaces) so Markdown formats you answer as part of the numbered item.
-   Example:
-   ```
-   git init
-   ```  
-5. **Test that your answers are correct!** There is **no excuse** for incorrect answers since you can test your answers by experimentation.      
-6. Verify that your Markdown formatting is correct -- points deducted for bad formatting. VS Code and IntelliJ have markdown previewers. You should also preview it on Github, since Github Markdown is a bit non-standard.
-
-**TODO**: Delete these instructions before you submit your work. Points deducted for each "TODO" in this file.
-
 ## Using Git
 
 [Basics](#basics)    
@@ -198,21 +177,40 @@ test/
 
 ## Branch and Merge
 
-**TODO**: This section is free-form.  Create 4 numbered items for common branch-and-merge tasks you would like to remember and show the git command to do each one. (You are write *more* than 4 if you want.)
-
-
+1.Creating a New Branch
+```
+git checkout -b <new_branch_name>
+```
+2.Switching to an Existing Branch  
+```
+git checkout <existing_branch_name>
+```
+3.Checking for Uncommitted Changes  
+```
+git status
+```
+4.Renaming a Branch 
+```
+git branch -m <new_branch_name>
+```
+5.Forcefully pushing changes to the remote repository from the local repository  
+```
+git push -f <remote> <branch>
+```
 
 ## Favorites
 
-> TODO: Describe *at least* 1 task that you would like to remember, and the git command(s) to do it.
-
+> During my study in computer programming 1, I faced some problems about pushing local repository  
+> to remote repository that I didn't understand, and my friend said force it! and is working.
+```
+git push -f
+```
 
 
 ---
 ## Resources
 
-> TODO: Add your favorite Git resources (at least 1)
-
+* [Git Summary][Git, Version Control, and Github] Overall, about the Git command provided in the classroom.
 * [Pro Git Online Book][ProGit] Chapters 2 & 3 contain the essentials. Downloadable e-book is available, too. 
 * [Visual Git Reference](https://marklodato.github.io/visual-git-guide) one page with illustrations of git commands.
 * [Markdown Cheatsheet][markdown-cheatsheet] summary of Markdown commands.
@@ -229,3 +227,4 @@ Learn Git Visually:
 [VisualizeGit]: http://git-school.github.io/visualizing-git/ "Online tools draws a graph of commits in a repo as you type"
 [markdown-cheatsheet]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [github-markdown]: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+[Git, Version Control, and Github]: https://cpske.github.io/ISP/git/?authuser=0 "Summary and overall about Git command"
