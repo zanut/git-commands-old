@@ -36,14 +36,12 @@
    > git checkout -b e2e-test origin/e2e-test
 
    ```
-   Todo There are many commands that will do this.  You may write one or more than one.
    ```
 
    6. The command to change the URL of the remote "origin" to a new URL, such as `https://hostname/newuser/new-repo-name`, is:
    > git remote set-url origin https://hostname/newuser/new-repo-name
 
    ```
-   TODO your answer
    ```
    This situation occurs when:
    - you change the name of a repo on Github
@@ -52,10 +50,9 @@
    - you want to switch from the https to the ssh protocol (the remote URL is different)    
 
    8. To create a *second* remote repository for your local repo, the command to add a remote named "bitbucket" with the URL "https://bitbucket.org/your-username/git-commands" is:
-   > git remote add bitbucket https://bitbucket.org/zanut/git-commands
+   > git remote add bitbucket https://bitbucket.org/your-username/git-commands
 
    ```
-   todo your answer
    ```
    - Note: you must **create** an empty repo on Bitbucket. This command just adds it as a remote, it won't create the remote repo.
-
+   
